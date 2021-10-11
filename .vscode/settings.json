@@ -1,0 +1,22 @@
+{
+  // settings.json 덮어쓰기
+  "workbench.settings.useSplitJSON": true,
+  // 데코레이터 실험 지원 기능 경고 제거
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  // 저장 시, format
+  "editor.formatOnSave": true,
+  // Typescript suggest language
+  "typescript.locale": "ko",
+  // javascript 유효성 검사 fasle => for typescript eslint
+  "javascript.validate.enable": false,
+  "eslint.codeAction.disableRuleComment": {},
+  // 저장 시, eslint 규격에 맞게 auto formatting
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // eslint 규격 path
+  "eslint.options": {
+    "configFile": ".eslintrc.js"
+  },
+  "workbench.startupEditor": "none"
+}
