@@ -1,7 +1,3 @@
-import Div from "./Div"
-import Berry from "./Berry"
+import Div from './Div';
 
-export {
-    Div, 
-    Berry,
-}
+export { Div };
