@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
  * {
   -webkit-tap-highlight-color: transparent;
-  font-family: 'Spoqa Han Sans Neo', Helvetica, Arial, sans-serif;
+  font-family: 'Gmarket Sans', Helvetica, Arial, sans-serif;
 }
 
 html,
@@ -114,13 +114,34 @@ td {
   animation: blueOpacity 0.35s;
 }
 
- :root {
-     --lightSteelBlue: #B0C4DE;
-     --white: #FFFFFF;
-     --linen: #FAF0E6;
-     --lightGrey: #D3D3D3;
-     --whiteSmoke: #F5F5F5;
- }
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-weight: 700;
+    src: url('/fonts/GmarketSansTTFBold.ttf') format('woff2');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-weight: 500;
+    src: url('/fonts/GmarketSansTTFMedium.ttf') format('woff2');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-weight: 400;
+    src: url('/fonts/GmarketSansTTFLight.ttf') format('woff2');
+    font-display: fallback;
+  }
+
+:root {
+    --lightSteelBlue: #B0C4DE;
+    --white: #FFFFFF;
+    --linen: #FAF0E6;
+    --lightGrey: #D3D3D3;
+    --whiteSmoke: #F5F5F5;
+}
 `;
 
 export default GlobalStyle;
